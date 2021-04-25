@@ -19,7 +19,9 @@ FACEBOOK_APP_ID=your_facebook_app_id
 FACEBOOK_APP_SECRET=your_facebook_secret
 ```
 Since .env file contains sensitive information it is ignored by .gitignore
-Enviroment defaults(that are should not be sensitive information) can be configured in .env.defaults
+
+Enviroment defaults(that should not be sensitive information) can be configured in .env.defaults
+
 Then run with npm o yarn
 
 ## Run with Yarn
@@ -51,7 +53,7 @@ redirect to localhost/home
 
 
 # References
-From more concrete examples look at [[https://github.com/passport]] passport.js examples like: 
-[[https://github.com/passport/express-4.x-twitter-example]] et al.
+For more concrete examples of passport.js usage look at https://github.com/passport passport.js examples like: 
+https://github.com/passport/express-4.x-twitter-example et al.
 
 
