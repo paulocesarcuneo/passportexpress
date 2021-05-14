@@ -6,21 +6,20 @@ name: Node.js CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [15.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - run: echo "test=holamundo" >> $GITHUB_ENV
     - run: echo "hello world"
     - run: echo ${test}
+    - name: Hello world
+      run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
+      env:
+        FIRST_NAME: Mona
+        middle_name: The
+        Last_Name: Octocat 
+    
